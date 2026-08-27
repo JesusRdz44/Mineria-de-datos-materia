@@ -1,7 +1,7 @@
 Práctica 3 — Visualización de Datos.
 Realize 5 gráficas distintas mediante funciones (plot_histograma, plot_boxplot, plot_dispersion, plot_pastel, plot_barras), cada una llamada con distintos parámetros según la variable a graficar
 
-Histograma — distribución de Weight (peso levantado por serie)
+Histograma — distribución de Weight (peso levantado por serie)\n
 Diagrama de caja — distribución de Weight en los 5 ejercicios más registrados, para comparar variabilidad de carga entre ejercicios
 Diagrama de dispersión — relación entre Weight y Reps
 Diagrama de pastel — proporción de series por tipo de rutina (Workout Name)
