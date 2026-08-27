@@ -1,4 +1,4 @@
-Práctica 4.Pruebas Estadísticas
+Práctica 4. Pruebas Estadísticas
 ¿El peso que se levanta (Weight) es realmente distinto según el ejercicio? Se comparan los 5 ejercicios más registrados: Squat, Chin Up, Incline Bench Press, Seated Shoulder Press y Weighted dips.
 
 Se revisa si los datos de cada ejercicio siguen una distribución normal. Esto decide qué prueba usar después.
