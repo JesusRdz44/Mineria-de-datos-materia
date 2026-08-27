@@ -9,7 +9,7 @@ Compara dos ejercicios específicos para confirmar el resultado a más detalle.
 
 Genera una gráfica para ver la comparación visualmente.
 
-Existen dos pruebas para comparar grupos que son ANOVA y Kruskal-Wallis. ANOVA solo es válida si los datos de cada grupo tienen una distribución normal. Para decidir una de las dos, se comprobó esto con una prueba llamada Shapiro-Wilk. El resultado fue que ningún ejercicio tiene datos normalizados, así que se usó Kruskal-Wallis, que es la versión que no necesita esa forma específica.
+ANOVA solo es válida si los datos de cada grupo tienen una distribución normal. Para decidir una de las dos, se comprobó esto con una prueba llamada Shapiro-Wilk. El resultado fue que ningún ejercicio tiene datos normalizados, así que se usó Kruskal-Wallis, que es la versión que no necesita esa forma específica.
 
 Se revisó solo una muestra de 500 datos por ejercicio ya que con miles de datos, la prueba de normalidad se vuelve demasiado estricta y casi siempre da que no es normal, aunque en la práctica sí lo sea. Tomar una muestra más chica da un resultado más confiable y además permite comparar de forma justa ejercicios que tienen distinta cantidad de registros.
 
