@@ -1,4 +1,4 @@
-Practica 2 — Estadistica Descriptiva
+Practica 2. Estadistica Descriptiva
 Dataset: Entrenamiento_gym.csv (registro de entrenamientos de gimnasio)
 
 Calcula estadistica descriptiva (media, mediana, moda, desviacion estandar, varianza) de las variables numericas Weight, Reps, Distance y Seconds
