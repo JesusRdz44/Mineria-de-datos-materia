@@ -50,7 +50,7 @@ else:
     print(f"Mann-Whitney U: U={stat2:.0f}, p-valor={p2:.6f}")
 
 if p2 < alpha:
-    print(f"p-valor < {alpha} -> '{ex1}' y '{ex2}' tienen pesos "
+    print(f"p-valor < {alpha} - '{ex1}' y '{ex2}' tienen pesos "
           f"significativamente distintos.")
 else:
     print(f"p-valor >= {alpha} - No hay diferencia significativa entre "
