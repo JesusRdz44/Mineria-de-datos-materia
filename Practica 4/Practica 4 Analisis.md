@@ -1,16 +1,18 @@
 Práctica 4.Pruebas Estadísticas
+¿El peso que se levanta (Weight) es realmente distinto según el ejercicio? Se comparan los 5 ejercicios más registrados: Squat, Chin Up, Incline Bench Press, Seated Shoulder Press y Weighted dips.
 
-¿El peso levantado (Weight) difiere significativamente entre distintos ejercicios? Se comparan los 5 ejercicios con más series registradas: Squat (Barbell), Chin Up, Incline Bench Press (Barbell), Seated Shoulder Press (Barbell) y Weighted dips.
+Se revisa si los datos de cada ejercicio siguen una distribución normal. Esto decide qué prueba usar después.
+Compara los 5 ejercicios al mismo tiempo para ver si hay alguna diferencia entre ellos.
+Compara dos ejercicios específicos para confirmar el resultado a más detalle.
+Genera una gráfica para ver la comparación visualmente.
 
-1. Prueba de normalidad por grupo, para decidir entre ANOVA o Kruskal-Wallis
-2. Prueba de diferencia entre los 5 grupos (Kruskal-Wallis, según el resultado del paso 1).
-3. Comparación específica entre los dos ejercicios con más registros (Mann-Whitney U), como profundización sobre el resultado general.
-4. Boxplot comparativo con el resultado de la prueba en el título.
+Existen dos pruebas para comparar grupos wque son ANOVA y Kruskal-Wallis. ANOVA solo es válida si los datos de cada grupo tienen una distribución normal. Para decidir una de las dos, se comprobó esto con una prueba llamada Shapiro-Wilk. El resultado fue que ningún ejercicio tiene datos normalizados, así que se usó Kruskal-Wallis, que es la versión que no necesita esa forma específica.
 
-ANOVA asume que los datos de cada grupo siguen una distribución normal. En vez de asumir esto o elegir Kruskal-Wallis, se corrió Shapiro-Wilk sobre cada uno de los 5 grupos. El resultado es que ninguno de los 5 ejercicios pasa la prueba de normalidad (p < 0.0001 en todos), por lo que se descarta ANOVA y se usa Kruskal-Wallis, que compara las distribuciones mediante rangos en vez de medias.
+Se revisó solo una muestra de 500 datos por ejercicio ya que con miles de datos, la prueba de normalidad se vuelve demasiado estricta y casi siempre da que no es normal, aunque en la práctica sí lo sea. Tomar una muestra más chica da un resultado más confiable y además permite comparar de forma justa ejercicios que tienen distinta cantidad de registros.
 
-Shapiro-Wilk pierde potencia estadística con muestras muy grandes ya que casi cualquier desviación mínima de la normalidad resulta significativa. Se tomó una muestra aleatoria de 500 observaciones por grupo (o el total si el grupo tiene menos) para mantener la prueba comparable entre ejercicios con tamaños de muestra muy distintos.
+La primera prueba (Kruskal-Wallis) solo dice sí hay diferencia entre los 5 ejercicios en general, pero no dice específicamente cuáles son distintos entre sí. Por eso se agregó una comparación extra, entre los dos ejercicios con más datos.
 
-Resultados
-- Kruskal-Wallis: H = 3650.43, p < 0.001. Existe diferencia significativa en el peso levantado entre al menos un par de los 5 ejercicios comparados.
-- Mann-Whitney (Squat vs. Chin Up): p < 0.001 estos dos ejercicios en particular tienen distribuciones de peso significativamente distintas, consistente con que son movimientos de piernas vs. tren superior con cargas típicas muy diferentes
+Resultado:
+Sí hay una diferencia real entre los ejercicios (no es casualidad): p < 0.001.
+Squat y Chin Up en particular también son claramente distintos entre sí: p < 0.001.
+Esto tiene sentido: Squat es un ejercicio de piernas (se levanta más peso) y Chin Up es de tren superior con el propio peso corporal (se levanta mucho menos).
