@@ -1,9 +1,9 @@
 Practica 5 — Modelos Lineales y Correlación. Se intento predecir cuántas repeticiones (Reps) se van a hacer a partir de cuánto peso (Weight) está levantando
 
-1. Revisa la correlación entre Weight y Reps.
-2. Entrena un modelo de regresión lineal para predecir Reps a partir de Weight.
-3. Calcula qué tan bueno es el modelo (R²).
-4. Genera dos gráficas: la línea del modelo sobre los datos, y una gráfica de "residuales" para revisar qué tan bien ajusta.
+Revisa la correlación entre Weight y Reps.
+Entrena un modelo de regresión lineal para predecir Reps a partir de Weight.
+Calcula qué tan bueno es el modelo (R²).
+Genera dos gráficas: la línea del modelo sobre los datos, y una gráfica de "residuales" para revisar qué tan bien ajusta.
 
 Antes de llegar al modelo final se probaron otras ideas que no dieron buen resultado. La idea era ver si había una progresión clara (cada vez más peso conforme pasa el tiempo) o si quizás agrupando por día se vería mejor la progresión. Pero el resultado dio que el modelo casi no explica nada (R² = 0.066). El resultado variaba mucho según el ejercicio, sin un patrón consistente.
 
