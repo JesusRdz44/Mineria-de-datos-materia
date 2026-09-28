@@ -9,7 +9,7 @@ df = pd.read_csv("../Practica 1/Entrenamiento_gym.csv")
 df = df[df["Weight"] < 1000].copy()
 print(f"Registros usados: {len(df)}")
 X = df[["Weight", "Reps"]]
-
+valores_k = range(2, 9)
 # K-Means agrupa segun distancias, asi que las variables deben estar en la misma escala
 scaler = StandardScaler()
 X_esc = scaler.fit_transform(X)
