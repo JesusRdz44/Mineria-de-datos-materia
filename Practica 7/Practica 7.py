@@ -21,18 +21,17 @@ silhouette_final = silhouette_score(X_esc, df["cluster"])
 print(f"Modelo K-Means (k={mejor_k})")
 print(f"Silhouette score: {silhouette_final:.4f}")
 
-print("\nCaracteristicas de cada grupo encontrado:")
+print("\nCaracterísticas de cada grupo encontrado:")
 resumen = df.groupby("cluster")[["Weight", "Reps"]].mean().round(1)
 resumen["num_series"] = df.groupby("cluster").size()
 print(resumen)
 
 plt.figure(figsize=(7, 5))
-
 scatter = plt.scatter(df["Weight"], df["Reps"], c=df["cluster"],
-                            cmap="viridis", alpha=0.4, s=12)
-plt.set_title(f"Grupos encontrados por K-Means (k={mejor_k})")
-plt.set_xlabel("Weight")
-plt.set_ylabel("Reps")
+                       cmap="viridis", alpha=0.4, s=12)
+plt.title(f"Grupos encontrados por K-Means (k={mejor_k})")
+plt.xlabel("Weight")
+plt.ylabel("Reps")
 plt.colorbar(scatter, label="Cluster")
 
 plt.tight_layout()
