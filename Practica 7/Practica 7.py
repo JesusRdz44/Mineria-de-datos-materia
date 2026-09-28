@@ -8,14 +8,11 @@ df = pd.read_csv("../Practica 1/Entrenamiento_gym.csv")
 
 df = df[df["Weight"] < 1000].copy()
 print(f"Registros usados: {len(df)}")
-
-
 X = df[["Weight", "Reps"]]
 
 # K-Means agrupa segun distancias, asi que las variables deben estar en la misma escala
 scaler = StandardScaler()
 X_esc = scaler.fit_transform(X)
-
 mejor_k = 3
 
 modelo = KMeans(n_clusters=mejor_k, random_state=42, n_init=10)
@@ -31,7 +28,6 @@ resumen["num_series"] = df.groupby("cluster").size()
 print(resumen)
 
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
-
 # Silhouette score vs k (justifica la eleccion de k)
 axes[0].plot(list(valores_k), siluetas, marker="o")
 axes[0].axvline(mejor_k, color="red", linestyle="--",
