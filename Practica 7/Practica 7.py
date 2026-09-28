@@ -28,7 +28,7 @@ print(resumen)
 
 plt.figure(figsize=(7, 5))
 
-scatter = axes[1].scatter(df["Weight"], df["Reps"], c=df["cluster"],
+scatter = plt.scatter(df["Weight"], df["Reps"], c=df["cluster"],
                             cmap="viridis", alpha=0.4, s=12)
 axes[1].set_title(f"Grupos encontrados por K-Means (k={mejor_k})")
 axes[1].set_xlabel("Weight")
