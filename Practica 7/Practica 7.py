@@ -26,7 +26,7 @@ resumen = df.groupby("cluster")[["Weight", "Reps"]].mean().round(1)
 resumen["num_series"] = df.groupby("cluster").size()
 print(resumen)
 
-fig, axes = plt.subplots(1, 2, figsize=(13, 5))
+plt.figure(figsize=(7, 5))
 
 scatter = axes[1].scatter(df["Weight"], df["Reps"], c=df["cluster"],
                             cmap="viridis", alpha=0.4, s=12)
