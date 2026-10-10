@@ -1,4 +1,4 @@
-# Practica 8 — Pronostico
+Practica 8 — Pronostico
 Se quiere responder cuanto entrenamiento se puede esperar en los proximos 6 meses (oct 2018 a mar 2019), con base en lo que se ha hecho desde oct 2015?
 Para medir cuanto entrenamiento se uso el volumen que es peso × repeticiones de cada serie, sumado por mes. Es un solo dato que combina que tanto peso se levanto y cuantas veces
 
