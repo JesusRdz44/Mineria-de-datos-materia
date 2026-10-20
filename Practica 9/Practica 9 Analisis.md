@@ -1,4 +1,5 @@
 Práctica 9 - Análisis de Texto
+
 Se quiere ver qué palabras aparecen más en los nombres de los ejercicios y de las rutinas. Esto muestra qué tipo de entrenamiento se hizo más: qué equipo, qué movimientos y si es pesado o ligero
 
 El dataset tiene cuatro columnas de texto, pero solo dos sirven que son Exercise Name y Workout Name
