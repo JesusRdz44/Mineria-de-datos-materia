@@ -71,7 +71,6 @@ for eje, frec, titulo in [(axes[0], frec_ejercicios, "Nombres de ejercicios"),
 plt.tight_layout()
 plt.savefig("nube_de_palabras.png")
 plt.close()
-print("\n[Guardado] nube_de_palabras.png")
 
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 for eje, frec, titulo in [(axes[0], frec_ejercicios, "Ejercicios"),
